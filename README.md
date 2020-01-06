@@ -11,16 +11,16 @@
 
 ## Contents
 
-- [Pre-requisites](pre-requisites)
-- [Setting Up The Project](setting-up-the-project)
-- [Configuring your app](configuring-your-app)
-- [Publishing your app to Google Clouds App Engine](pushing-your-app-to-googles-cloud)
-- [References](references)
+- [Pre-requisites](#pre-requisites)
+- [Setting Up The Project](#setting-up-the-project)
+- [Configuring your app](#configuring-your-app)
+- [Publishing your app to Google Clouds App Engine](#pushing-your-app-to-googles-cloud)
+- [References](#references)
 
 ## Pre-requisites
 -  Up-to-date gcloud SDK installed on your system:  https://cloud.google.com/sdk/install
--  Up-to-date gcloud App Engine Go Component installed on your system  [see "Installing gcloud App Engine Go Component"](Installing-gcloud-App-Engine-Go-Component) 
--  gcloud project created and linked to [see "Setting up the project"](setting-up-the-project)
+-  Up-to-date gcloud App Engine Go Component installed on your system  [see "Installing gcloud App Engine Go Component"](#installing-gcloud-app-engine-go-component) 
+-  gcloud project created and linked to [see "Setting up the project"](#setting-up-the-project)
 
 ### Installing gcloud App Engine Go Component
 
@@ -34,7 +34,7 @@ gcloud components install app-engine-go
 
 ### Creating a new project.
 
-If you haven't yet created a gcloud project you can either do this from https://console.cloud.google.com  (see https://cloud.google.com/appengine/docs/standard/nodejs/building-app/creating-project) or from your computers command line using the SDK.  If you create the project via https://console.cloud.google.com you will need to carry out [linking to an existing project](linking-to-an-existing-project). If, instead, you use the SDK command line on your computer, this will be done for you.
+If you haven't yet created a gcloud project you can either do this from https://console.cloud.google.com  (see https://cloud.google.com/appengine/docs/standard/nodejs/building-app/creating-project) or from your computers command line using the SDK.  If you create the project via https://console.cloud.google.com you will need to carry out [linking to an existing project](#linking-to-an-existing-project). If, instead, you use the SDK command line on your computer, this will be done for you.
 
 ```
 gcloud create project PROJECT-NAME
