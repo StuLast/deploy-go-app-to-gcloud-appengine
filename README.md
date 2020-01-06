@@ -14,7 +14,7 @@
 - [Pre-requisites](pre-requisites)
 - [Setting Up The Project](setting-up-the-project)
 - [Configuring your app](configuring-your-app)
-- []
+- [Publishing your app to Google Clouds App Engine](pushing-your-app-to-googles-cloud)
 - [References](references)
 
 ## Pre-requisites
@@ -107,16 +107,9 @@ func main() {
 
 Note that we ask google to tell us what port it's assigning to our app.  For local development, our machine wont have a value for os.Getenv("PORT), so our if statement assigns 8080 (or whatever we tell it to).
 
-We also make use of the core log library to record any errors.  You can monitor the log (which also shows all GET/POST requests), using the following code:
-
-```
-gcloud app logs tail -s default
-```
-
-Use Ctrl+C/Cmd+c to exit log tracking.
 
 
-## Pushing your app to Googles Cloud
+## Pushing your app to Google's Cloud
 
 Now that your local google environment has been set up to point to the correct App-Engine project, switch to your project folder (the one with app.yaml and main.go in it) and enter the following code in your local terminal/shell/cli to push your project to the project on you Google Cloud Account.
 
@@ -129,7 +122,18 @@ To view your published app you can use the following code in your terminal/shell
 
 ```
 gcloud app browse
+
 ```
+Or you can visit https://YOUR-PROJECT.appspot.com, replacing YOUR-PROJECTS with your own projects name.
+
+We also make use of the core log library to record any errors.  You can monitor the log (which also shows all GET/POST requests), using the following code:
+
+```
+gcloud app logs tail -s default
+```
+
+Use Ctrl+C/Cmd+c to exit log tracking.
+
 
 ## References
 
